@@ -1,6 +1,95 @@
 @charset "UTF-8";
 
-#div-de-canto {
-    height: 100vw;
-    width: 20%;
+* {
+    margin: 0px;
 }
+
+/* -----------------------------------------TELA DE CANTO------------------------------------- */
+#div-de-canto {
+    height: 800px; /* MUDAR DPS */
+    width: 20%;
+    background-color: green;
+    float: left top;
+}
+
+#h2-div-de-canto {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div#container-temas {
+    margin-top: 20px;
+}
+
+div#container-de-canto {
+    /* position: relative;
+    top: 20px; */
+    padding-top: 45px;
+}
+
+
+/* -----------------------------------------TELA DE CANTO--------------------------------------------- */
+
+
+
+/* -----------------------------------------CLASSES ÚTEIS------------------------------------------------- */
+.h1-principal {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container-h1-principal {
+    height: 100vw;
+    width: 80%;
+    float: right;
+}
+
+.temas {
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div.container-p-temas {
+    border-top: 1px solid rgb(36, 34, 34);
+}
+
+a.a-de-canto {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* -----------------------------------------CLASSES ÚTEIS------------------------------------------------- */
+
+/* -----------------------------------------QUIZES--------------------------------------------------------- */
+div.container-quizes {
+    width: 96%;
+    height: 700px;
+    padding: 20px;
+}
+
+div.inline-quizes {
+    width: 100%;
+    height: 210px;
+    margin-bottom:  20px;
+}
+
+div.quizes {
+    width: 210px;
+    height: 210px;
+    background-color: green;
+    display: inline-block;
+}
+
+.quizes-esquerda {
+    float: left;
+}
+
+.quizes-direita {
+    float: right;
+}
+
+
+/* -----------------------------------------QUIZES--------------------------------------------------------- */
