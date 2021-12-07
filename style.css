@@ -68,27 +68,35 @@ div.container-quizes {
     width: 96%;
     height: 700px;
     padding: 20px;
+    transform: translateY(3%);
 }
 
 div.inline-quizes {
     width: 100%;
-    height: 210px;
+    height: 330px;
     margin-bottom:  20px;
 }
 
+.inline-quizes-bottom {
+    transform: translateY(-6%);
+}
+
 div.quizes {
-    width: 210px;
-    height: 210px;
+    width: 400px;
+    height: 300px;
     background-color: green;
     display: inline-block;
+    border-radius: 20px;
 }
 
 .quizes-esquerda {
     float: left;
+    transform: translateX(30%);
 }
 
 .quizes-direita {
     float: right;
+    transform: translateX(-30%);
 }
 
 
