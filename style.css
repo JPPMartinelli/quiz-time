@@ -112,7 +112,6 @@ div.quizes {
     font-family: sans-serif;
     transform: translateY(350%) translateX(3%);
     text-shadow: 1px 1px 4px black;
-    display: none;
 }
 
 .quizes-esquerda {
@@ -126,17 +125,24 @@ div.quizes {
     transform: translateX(-30%);
 }
 
-.quizes:hover {
+.quizes-esquerda:hover {
     box-shadow: inset 0px 0px 15px 5px var(--cor-sombra);
-    transition: 1s;
+    transition: 0.5s;
+    transform: translateX(30%) scale(1.05);
     /* animation-name: quiz-hover;
     animation-duration: 1s;
     animation-fill-mode: forwards; */
 }
 
-.quizes:hover~.p-quizes {
-    display: block;
-    transition: 1s;
+.quizes-direita:hover {
+    box-shadow: inset 0px 0px 15px 5px var(--cor-sombra);
+    transform: translateX(-30%) scale(1.05);
+    transition: 0.5s;
+}
+
+.p-quizes ~ .quizes:hover {
+    display: none;
+    transition: 0.5s;
 }
 
 /* @keyframes quiz-hover {
