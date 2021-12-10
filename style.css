@@ -6,6 +6,7 @@
 
 :root {
     --cor-sombra: rgb(29, 27, 27);
+    --cor-marvel: rgb(212 3 23);
 }
 
 /* -----------------------------------------TELA DE CANTO------------------------------------- */
@@ -155,3 +156,98 @@ div.quizes {
 } */
 
 /* -----------------------------------------QUIZES--------------------------------------------------------- */
+
+/* -----------------------------------------MARVEL--------------------------------------------------------- */
+
+.pergunta-marvel {
+    background-color: rgb(212 3 23);
+    height: 100px;
+    width: 100%;
+}
+
+.pergunta-marvel p {
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    transform: translateY(100%);
+}
+
+#stan-lee {
+    transform: scale(0.8) translateX(130%);
+}
+
+.resposta-marvel {
+    background-color: var(--cor-marvel);
+}
+
+/* -----------------------------------------MARVEL--------------------------------------------------------- */
+
+
+/* ---------------------------------------RESPOSTAS-------------------------------------------------------- */
+
+.container-respostas {
+    background-color: black;
+    height: 350px;
+    width: 100%;
+}
+
+.respostas-esquerda {
+    height: 350px;
+    width: 43%;
+    background-color: blue;
+}
+
+.resposta-1 {
+    width: 350px;
+    height: 125px;
+    float: right;
+    background-color: var(--cor-marvel);
+}
+
+.resposta-2 {
+    width: 350px;
+    height: 125px;
+    float: right;
+    transform: translateY(80%);
+}
+
+
+
+
+.respostas-direita {
+    height: 350px;
+    width: 43%;
+    background-color: blue;
+    float: right;
+    transform: translateY(-100%);
+}
+
+.resposta-3 {
+    width: 350px;
+    height: 125px;
+    float: left;
+}
+
+.resposta-4 {
+    width: 350px;
+    height: 125px;
+    float: left;
+    background-color: var(--cor-marvel);
+    transform: translateY(80%);
+}
+
+/* ---------------------------------------RESPOSTAS-------------------------------------------------------- */
+
+
+
+
+
+
+#voltar {
+    position: fixed;
+    top: 80%;
+    color: white;
+}
+
+
