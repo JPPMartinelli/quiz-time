@@ -155,6 +155,14 @@ div.quizes {
     }
 } */
 
+.p-respostas {
+    color: white;
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
 /* -----------------------------------------QUIZES--------------------------------------------------------- */
 
 /* -----------------------------------------MARVEL--------------------------------------------------------- */
@@ -169,6 +177,7 @@ div.quizes {
     color: white;
     font-size: 30px;
     font-family: sans-serif;
+    font-weight: bolder;
     text-align: center;
     transform: translateY(100%);
 }
@@ -187,7 +196,6 @@ div.quizes {
 /* ---------------------------------------RESPOSTAS-------------------------------------------------------- */
 
 .container-respostas {
-    background-color: black;
     height: 350px;
     width: 100%;
 }
@@ -195,14 +203,13 @@ div.quizes {
 .respostas-esquerda {
     height: 350px;
     width: 43%;
-    background-color: blue;
+
 }
 
 .resposta-1 {
     width: 350px;
     height: 125px;
     float: right;
-    background-color: var(--cor-marvel);
 }
 
 .resposta-2 {
@@ -218,7 +225,6 @@ div.quizes {
 .respostas-direita {
     height: 350px;
     width: 43%;
-    background-color: blue;
     float: right;
     transform: translateY(-100%);
 }
@@ -234,7 +240,7 @@ div.quizes {
     height: 125px;
     float: left;
     background-color: var(--cor-marvel);
-    transform: translateY(80%);
+    transform: translateY(81%);
 }
 
 /* ---------------------------------------RESPOSTAS-------------------------------------------------------- */
@@ -247,7 +253,7 @@ div.quizes {
 #voltar {
     position: fixed;
     top: 80%;
-    color: white;
+    color: black;
 }
 
 
