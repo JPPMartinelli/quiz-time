@@ -161,6 +161,7 @@ div.quizes {
     font-size: 30px;
     font-weight: bolder;
     text-align: center;
+    transform: translateY(100%);
 }
 
 /* -----------------------------------------QUIZES--------------------------------------------------------- */
@@ -189,6 +190,11 @@ div.quizes {
 .resposta-marvel {
     background-color: var(--cor-marvel);
 }
+
+.resposta-marvel:hover {
+    background-color: black;
+}
+
 
 /* -----------------------------------------MARVEL--------------------------------------------------------- */
 
@@ -257,3 +263,36 @@ div.quizes {
 }
 
 
+/* ----------------------------------páginas pós-respostas-------------------- */
+
+.resposta-correta {
+    color: white;
+    text-decoration: none;
+}
+
+.parabens {
+    animation-name: parabens;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    background-color: black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes parabens {
+
+    33% {
+        transform: translateX(400px) translateY(400px);
+        height: 50px;
+    }
+
+    66% {
+        transform: translateX(500px) translateY(100px);
+    }
+
+    100% {
+        transform: translateX(700px) translateY(400px) scale(3.0);
+    }
+}
+/* ----------------------------------páginas pós-respostas-------------------- */
