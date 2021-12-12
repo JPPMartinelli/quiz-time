@@ -195,6 +195,11 @@ div.quizes {
     background-color: black;
 }
 
+body#body-parabens-marvel {
+    background-image: url(imagens/background-marvel\(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
 
 /* -----------------------------------------MARVEL--------------------------------------------------------- */
 
@@ -271,15 +276,52 @@ div.quizes {
 }
 
 .parabens {
-    animation-name: parabens;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    background-color: black;
+    background-color: var(--cor-marvel);
     border-radius: 50%;
     width: 100px;
     height: 100px;
+    box-shadow: 0px 0px 7px 0px var(--cor-sombra), 0px 0px 3px 0px black;
+    z-index: 2;
+    transform: translateY(-100%);
+
+    animation-name: parabens;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 }
 
+p.parabenizacao {
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+p.pontuacao{
+    font-size: 6px;
+}
+
+div.parabenizacao-position {
+    animation-name: parabenizacao;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    transform: translateY(140%);
+    opacity: 0;
+}
+
+div#esconder-background {
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    z-index: 0;
+
+    animation-name: show-background;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+/* --------------------------------------------ANIMAÇÕES------------------------------------------------------------ */
 @keyframes parabens {
 
     33% {
@@ -292,7 +334,20 @@ div.quizes {
     }
 
     100% {
-        transform: translateX(700px) translateY(400px) scale(3.0);
+        transform: translateX(700px) translateY(300px) scale(3.0);
     }
 }
+
+@keyframes parabenizacao {
+    100% {
+        opacity: 1;
+    }
+}
+
+ @keyframes show-background {
+    100% {
+        opacity: 0;
+    }
+} 
+/* --------------------------------------------ANIMAÇÕES------------------------------------------------------------ */
 /* ----------------------------------páginas pós-respostas-------------------- */
