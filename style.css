@@ -7,6 +7,7 @@
 :root {
     --cor-sombra: rgb(29, 27, 27);
     --cor-marvel: rgb(212 3 23);
+    --sombra: 0px 0px 7px 0px var(--cor-sombra), 0px 0px 3px 0px black;
 }
 
 /* -----------------------------------------TELA DE CANTO------------------------------------- */
@@ -196,9 +197,10 @@ div.quizes {
 }
 
 body#body-parabens-marvel {
-    background-image: url(imagens/background-marvel\(2\).jpg);
+    background-image: url(imagens/background-marvel\(3\).jpg);
     background-repeat: no-repeat;
     background-size: 100vw;
+    height: 753px;
 }
 
 /* -----------------------------------------MARVEL--------------------------------------------------------- */
@@ -280,14 +282,14 @@ body#body-parabens-marvel {
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    box-shadow: 0px 0px 7px 0px var(--cor-sombra), 0px 0px 3px 0px black;
-    z-index: 2;
-    transform: translateY(-100%);
+    box-shadow: var(--sombra);
+    transform: translateY(-750px);
 
-    animation-name: parabens;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
+    animation-name: parabens, parabens-subida;
+    animation-duration: 2s, 0.5s;
+    animation-fill-mode: forwards, forwards;
+    animation-timing-function: ease-in-out, linear;
+    animation-delay: 0s, 3s;
 }
 
 p.parabenizacao {
@@ -310,31 +312,71 @@ div.parabenizacao-position {
     opacity: 0;
 }
 
-div#esconder-background {
+#sobrepoe {
     width: 100%;
-    height: 500px;
-    background-color: black;
-    z-index: 0;
+    height: 753px;
+    background-color: white;
+    opacity: 1;
 
     animation-name: show-background;
-    animation-delay: 2s;
     animation-fill-mode: forwards;
     animation-duration: 1s;
+    animation-delay: 2s;
+    
+}
+
+.jogar-mais {
+    width: 250px;
+    height: 50px;
+    background-color: green;
+    display: inline-block;
+    transform: translateX(250%) translateY(-811%);
+    box-shadow: var(--sombra);
+    opacity: 0;
+
+    animation-name: show-jogar-mais;
+    animation-delay: 3.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.jogar-mais:hover {
+    transform: translateX(250%) translateY(-811%) scale(1.1);
+}
+
+.link-jogar-mais {
+    color: white;
+    text-decoration: none;
+    transform: translateX(250%) translateY(-811%);
+}
+
+.p-jogar-mais {
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;;
+    font-family: sans-serif;
+    transform: translateY(80%);
 }
 /* --------------------------------------------ANIMAÇÕES------------------------------------------------------------ */
 @keyframes parabens {
 
     33% {
-        transform: translateX(400px) translateY(400px);
+        transform: translateX(400px) translateY(-350px);
         height: 50px;
     }
 
     66% {
-        transform: translateX(500px) translateY(100px);
+        transform: translateX(500px) translateY(-650px);
     }
 
     100% {
-        transform: translateX(700px) translateY(300px) scale(3.0);
+        transform: translateX(700px) translateY(-450px) scale(3.0);
+    }
+}
+
+@keyframes parabens-subida {
+    100% {
+        transform: translateX(700px) translateY(-550px) scale(3.0);
     }
 }
 
@@ -349,5 +391,11 @@ div#esconder-background {
         opacity: 0;
     }
 } 
+
+@keyframes show-jogar-mais {
+    100% {
+        opacity: 1;
+    }
+}
 /* --------------------------------------------ANIMAÇÕES------------------------------------------------------------ */
 /* ----------------------------------páginas pós-respostas-------------------- */
