@@ -68,12 +68,31 @@ a.a-de-canto {
 /* ----------------------------------------HEADER------------------------------------------------------------- */
 header.header-index {
     width: 80%;
+    height: 40px;
     float: right;
     background-color: green;
+    position: relative;
 }
 
 button.pesquisar {
-    transform: translateX(0%);
+    position: absolute;
+    left: 99%;
+}
+
+span#login {
+    position: absolute;
+    right: 3%;
+    top: 19%;
+
+    color: white;
+    border: 1px solid white;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+#form_index {
+    position: absolute;
+    top: 19%;
 }
 /* ----------------------------------------HEADER------------------------------------------------------------- */
 /* -----------------------------------------CLASSES ÚTEIS------------------------------------------------- */
@@ -408,3 +427,15 @@ div.parabenizacao-position {
 }
 /* --------------------------------------------ANIMAÇÕES------------------------------------------------------------ */
 /* ----------------------------------páginas pós-respostas-------------------- */
+
+/* --------------------------------------------LOGIN------------------------------------------------------------ */
+#nav_login {
+    position: relative;
+    top: 0%;
+    left: 38%;
+    width: 25%;
+    height: 40vh;
+
+    border: 1px solid black;
+}
+/* --------------------------------------------LOGIN------------------------------------------------------------ */
