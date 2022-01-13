@@ -432,7 +432,8 @@ div.parabenizacao-position {
 
 #body_login {
     background-image: url('imagens/fundo-verde.jpg');
-    background-repeat: 
+    background-repeat: no-repeat;
+    background-size: 100vw; 
 }
 
 #nav_login {
@@ -445,6 +446,7 @@ div.parabenizacao-position {
 
     border: 1px solid black;
     box-shadow: var(--sombra);
+    background-color: white;
 }
 
 #form_login {
@@ -461,6 +463,19 @@ div.parabenizacao-position {
     border-left: 0;
     box-shadow: 0px 0px 2px green;
     outline: none;
+}
+
+.input_login:focus {
+    border-bottom: 1px solid green;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    box-shadow: none;
+}
+
+.input_login:focus {
+    border-bottom: 1px solid green;
+    transition-duration: 0.3s;
 }
 
 #p_cadastre-se {
