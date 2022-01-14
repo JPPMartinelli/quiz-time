@@ -494,4 +494,9 @@ div.parabenizacao-position {
     left: 29%;
     color: white;
 }
+
+#input_cadastrar-se:hover {
+    box-shadow: var(--sombra);
+    transition-duration: 0.5s;
+}
 /* --------------------------------------------LOGIN------------------------------------------------------------ */
