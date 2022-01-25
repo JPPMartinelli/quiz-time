@@ -568,4 +568,30 @@ div#container_article_cadastrar-se {
     font-weight: bolder;
     color: rgb(59, 53, 53);
 } 
+.submit {
+width: 250px;
+height: 50px;
+background-color: green;
+display: inline-block;
+box-shadow: var(--sombra);
+
+position: relative;
+left: 35%;
+transform: translateY(57%);
+margin-bottom: 10%;
+}
+
+#div_scroll {
+    width: 40%;
+    height: 27vw;
+    float: right;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow-y: scroll;
+    margin: 15px 30px 15px 12px;
+    padding: 10px 15px 10px 10px;
+    box-shadow: var(--sombra);
+    text-align: justify;
+}
+
 /* --------------------------------------------CADASTRO------------------------------------------------------------ */
