@@ -92,6 +92,9 @@ span#login {
 span#login:hover {
     padding: 3px;
     transition-duration: 0.5s;
+    position: absolute;
+    right: 3%;
+    top: 19%;
 }
 
 #form_index {
@@ -540,6 +543,8 @@ div#container_article_cadastrar-se {
 }
 
 #form_cadastro {
+    position: absolute;
+    top: 111%;
     width: 50%;
     float: left;
 }
@@ -593,5 +598,6 @@ margin-bottom: 10%;
     box-shadow: var(--sombra);
     text-align: justify;
 }
+
 
 /* --------------------------------------------CADASTRO------------------------------------------------------------ */
